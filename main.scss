@@ -5,6 +5,8 @@
     text-decoration: none;
     border: none;
     outline: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
 }
 
 html{
@@ -15,4 +17,25 @@ body{
     max-width: 100%;
     height: 100vh;
     background: #0a0a0a;
+}
+
+.wip-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #BE0026;
+
+    .wip-desc{
+        // font-size: clamp(10rem, 5.3846rem + 20.5128vw, 30rem);
+        font-size: 20rem;
+
+        font-weight: 800;
+        letter-spacing: 10px;
+    }
+
+    p{
+    }
 }
