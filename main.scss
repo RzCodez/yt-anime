@@ -10,32 +10,60 @@
 }
 
 html{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body{
     max-width: 100%;
     height: 100vh;
-    background: #0a0a0a;
+    // background: #0a0a0a;
 }
 
 .wip-container{
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     position: relative;
-    background: #BE0026;
+    background: #000;
 
     .wip-desc{
+        position: relative;
+        // background: green;
+        padding: 4rem 3rem;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+        z-index: 3;
         // font-size: clamp(10rem, 5.3846rem + 20.5128vw, 30rem);
-        font-size: 20rem;
+        // text-align: center;
+        .wip{
+            height: max-content;
+            width: max-content;
+            // font-size: clamp(10rem, 7.6923rem + 10.2564vw, 20rem);
+            font-size: clamp(5rem, 3.1538rem + 8.2051vw, 13rem);
+            line-height: 100%;
+            font-weight: 800;
+            letter-spacing: 10px;
+        }
 
-        font-weight: 800;
-        letter-spacing: 10px;
+        .wip-text{
+            font-size: clamp(1rem, 0.9308rem + 0.3077vw, 1.3rem);
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
     }
 
-    p{
+    img{
+        position: absolute;
+        bottom: 0;
+        width: clamp(20rem, 16.5385rem + 15.3846vw, 35rem);;
     }
 }
